@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<div>
+    <ul>
+         {% for meeting in meeting %}
+         <li><b>
+            {{ meeting.title}}</b>
+         </li>
+         {%empty%}
+         <li>
+            no metings
+         </li>
+         {%endfor%}
+    </ul>
+</div>
